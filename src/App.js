@@ -1,25 +1,32 @@
-import logo from './logo.svg';
 import './App.css';
+import Carstore from './components/Carstore';
+import Cart from './components/Cart';
+import ClassStudents from './components/ClassStudents';
+import Cookbook from './components/Cookbook';
+import Cookbookvc from './components/Cookbookvc';
+import Library from './components/Library';
+import Onlinestore from './components/Onlinestore';
+import Watchlist from './components/Watchlist';
+
+
+
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* < Cart />
+      < Watchlist />
+      < Onlinestore />
+      < Carstore />
+      < Library />
+      < ClassStudents />
+      <Cookbook /> */}
+      <Cookbookvc name = "Aman as a prop"/>
     </div>
-  );
+  )
 }
 
+
 export default App;
+
