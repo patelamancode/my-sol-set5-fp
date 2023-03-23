@@ -1,6 +1,22 @@
 import React from 'react';
 
+// const url = 'https://geocode.xyz/51.50354,-0.12768?geoit=json';
 
+
+const whereAmI = () => {
+    fetch(`https://coffee.alexflipnote.dev/Wi2tVKk1tDQ_coffee.png`)
+    .then(res => res.json())
+    .then(data => console.log(data))
+}
+
+
+whereAmI()
+
+
+// fetch(url)
+// .then(res => res.json())
+// .then(data => console.log(data))
+// .catch(error => console.log(error))
 
 
 

@@ -7,6 +7,8 @@ import Cookbookvc from './components/Cookbookvc';
 import Library from './components/Library';
 import Onlinestore from './components/Onlinestore';
 import Watchlist from './components/Watchlist';
+import Geolocation from './components/Geolocation';
+import Levelzeroreact from './components/Levelzeroreact';
 
 
 
@@ -22,7 +24,9 @@ function App() {
       < Library />
       < ClassStudents />
       <Cookbook /> */}
-      <Cookbookvc name = "Aman as a prop"/>
+      {/* <Cookbookvc name = "Aman as a prop"/> */}
+      {/* <Geolocation /> */}
+      < Levelzeroreact />
     </div>
   )
 }
