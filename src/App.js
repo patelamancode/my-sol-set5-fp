@@ -9,6 +9,7 @@ import Onlinestore from './components/Onlinestore';
 import Watchlist from './components/Watchlist';
 import Geolocation from './components/Geolocation';
 import Levelzeroreact from './components/Levelzeroreact';
+;
 
 
 
@@ -27,6 +28,7 @@ function App() {
       {/* <Cookbookvc name = "Aman as a prop"/> */}
       {/* <Geolocation /> */}
       < Levelzeroreact />
+     
     </div>
   )
 }
