@@ -2,7 +2,7 @@ import React from 'react'
 
 const EmployeeCard = ({employeesDetails}) => {
     const whoIsLevel2 = (level) => {if(level===2) return "red"};
-    const borderForPresident = (designation) => {if(designation==="president") return "solid 2px black"};
+    const borderForPresident = (designation) => {if(designation==="President") return "solid 2px black"};
     
   return (
     <div>
