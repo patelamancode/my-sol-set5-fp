@@ -1,5 +1,5 @@
 import './App.css';
-import { employees } from './components/Database';
+// import { employees } from './components/Database';
 // import Carstore from './components/Carstore';
 // import Cart from './components/Cart';
 // import ClassStudents from './components/ClassStudents';
@@ -10,7 +10,8 @@ import { employees } from './components/Database';
 // import Watchlist from './components/Watchlist';
 // import Geolocation from './components/Geolocation';
 // import Levelzeroreact from './components/Levelzeroreact';
-import EmployeeCard from './components/100Days_of_code/EmployeeCard';
+// import EmployeeCard from './components/100Days_of_code/Day1/EmployeeCard';
+import ZoomCounter from './components/100Days_of_code/Day2/ZoomCounter';
 
 
 
@@ -29,7 +30,8 @@ function App() {
       {/* <Cookbookvc name = "Aman as a prop"/> */}
       {/* <Geolocation /> */}
       {/* < Levelzeroreact /> */}
-     <EmployeeCard employeesDetails={employees}/>
+     {/* <EmployeeCard employeesDetails={employees}/> */}
+     <ZoomCounter />
     </div>
   )
 }
