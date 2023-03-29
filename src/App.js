@@ -11,7 +11,8 @@ import './App.css';
 // import Geolocation from './components/Geolocation';
 // import Levelzeroreact from './components/Levelzeroreact';
 // import EmployeeCard from './components/100Days_of_code/Day1/EmployeeCard';
-import ZoomCounter from './components/100Days_of_code/Day2/ZoomCounter';
+// import ZoomCounter from './components/100Days_of_code/Day2/ZoomCounter';
+import DisableButton from './components/100Days_of_code/Day2/DisableButton';
 
 
 
@@ -31,7 +32,8 @@ function App() {
       {/* <Geolocation /> */}
       {/* < Levelzeroreact /> */}
      {/* <EmployeeCard employeesDetails={employees}/> */}
-     <ZoomCounter />
+     {/* <ZoomCounter /> */}
+     <DisableButton />
     </div>
   )
 }
