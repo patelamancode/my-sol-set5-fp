@@ -4,26 +4,23 @@ import React, { useState } from 'react'
 
 const MyGadgets = ({productData}) => {
 
-    const [bgColor, setBgColor] = useState('');
+    const [isOn, setIsOn ] = useState(false);
 
     const showList = () =>{
-        console.log("click");
-        const isExpensive =(itemValue)=>{
-            console.log("inside func");
-            if(itemValue > 50000){
-            return setBgColor('blue')
-        }
-        }
-        
-        isExpensive()
+        setIsOn(!isOn)
     }
+
+    const listStyle = (price) => ({
+        border: ' solid 2px pink',
+        margin:'5px', 
+        backgroundColor: price > 50000 && isOn ? 'green' : ''})
 
   return (
     <div>
       <h2>Solution 8:</h2>
       <ol style={{border: ' solid 2px black'}}>
         {productData.map(({id,name,description,price})=>
-        <li key={id} style={{border: ' solid 2px pink', margin:'5px', backgroundColor:bgColor}}>{name} , <em>{description}</em> Rs.{price}</li>)}
+        <li key={id} style={listStyle(price)}>{name} , <em>{description}</em> Rs.{price}</li>)}
       </ol>
       <button style={{cursor:'pointer'}} onClick={showList}>Highlight-Expensive-items</button>
     </div>
