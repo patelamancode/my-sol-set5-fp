@@ -1,4 +1,5 @@
 import './App.css';
+import PracticeSet2 from './components/100Days_of_code/Day4/PracticeSet2';
 // import { employees } from './components/Database';
 // import Carstore from './components/Carstore';
 // import Cart from './components/Cart';
@@ -13,7 +14,7 @@ import './App.css';
 // import EmployeeCard from './components/100Days_of_code/Day1/EmployeeCard';
 // import ZoomCounter from './components/100Days_of_code/Day2/ZoomCounter';
 // import DisableButton from './components/100Days_of_code/Day2/DisableButton';
-import ProductCard from './components/100Days_of_code/Day3/ProductCard';
+// import ProductCard from './components/100Days_of_code/Day3/ProductCard';
 
 
 
@@ -35,7 +36,8 @@ function App() {
      {/* <EmployeeCard employeesDetails={employees}/> */}
      {/* <ZoomCounter /> */}
      {/* <DisableButton /> */}
-     <ProductCard />
+     {/* <ProductCard /> */}
+     <PracticeSet2 />
     </div>
   )
 }
