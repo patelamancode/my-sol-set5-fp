@@ -12,7 +12,8 @@ import './App.css';
 // import Levelzeroreact from './components/Levelzeroreact';
 // import EmployeeCard from './components/100Days_of_code/Day1/EmployeeCard';
 // import ZoomCounter from './components/100Days_of_code/Day2/ZoomCounter';
-import DisableButton from './components/100Days_of_code/Day2/DisableButton';
+// import DisableButton from './components/100Days_of_code/Day2/DisableButton';
+import ProductCard from './components/100Days_of_code/Day3/ProductCard';
 
 
 
@@ -33,7 +34,8 @@ function App() {
       {/* < Levelzeroreact /> */}
      {/* <EmployeeCard employeesDetails={employees}/> */}
      {/* <ZoomCounter /> */}
-     <DisableButton />
+     {/* <DisableButton /> */}
+     <ProductCard />
     </div>
   )
 }
