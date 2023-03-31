@@ -1,9 +1,12 @@
 import React from 'react'
 import Greetings from './Greetings'
 import Product from './Product'
-import { userData , products } from '../../Database'
+import { userData , products , product2 , title, content , heading, name, learning } from '../../Database'
 import UserProfileCard from './UserProfileCard'
 import Gadgets from './Gadgets'
+import Phones from './Phones'
+import Article from './Article'
+import About from './About'
 
 
 
@@ -16,6 +19,9 @@ const PracticeSet2 = () => {
       <Product productName={"Show your work"} price={180}/>
       <UserProfileCard userDetails={userData}/>
       <Gadgets productData={products}/>
+      <Phones productData={product2}/>
+      <Article title={title} content={content}/>
+      <About heading={heading} name={name} learning={learning}/>
     </div>
   )
 }
