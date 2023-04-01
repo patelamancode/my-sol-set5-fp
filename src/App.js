@@ -1,5 +1,6 @@
 import './App.css';
-import PracticeSet2 from './components/100Days_of_code/Day4/PracticeSet2';
+// import PracticeSet2 from './components/100Days_of_code/Day4/PracticeSet2';
+import Practiceset3 from './components/100Days_of_code/Day5/Practiceset3';
 // import { employees } from './components/Database';
 // import Carstore from './components/Carstore';
 // import Cart from './components/Cart';
@@ -37,7 +38,8 @@ function App() {
      {/* <ZoomCounter /> */}
      {/* <DisableButton /> */}
      {/* <ProductCard /> */}
-     <PracticeSet2 />
+     {/* <PracticeSet2 /> */}
+     <Practiceset3 />
     </div>
   )
 }
