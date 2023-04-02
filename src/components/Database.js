@@ -234,4 +234,82 @@ const cartoons = [
   }
 ]
 
-export { employees , userData , products , product2 , title, content , heading, name, learning , product3 ,todoItems , cartoons};
+
+const DonationData = [
+  {
+    id: 1,
+    name: 'Nitin',
+    Donation: 7800,
+  },
+  {
+    id: 2,
+    name: 'Mehak',
+    Donation: 9500,
+  },
+  {
+    id: 3,
+    name: 'Mehul',
+    Donation: 65000,
+  },
+  {
+    id: 4,
+    name: 'Nina',
+    Donation: 560,
+  },
+]
+
+const cars = [
+  {
+    id: 1,
+    name: 'supra',
+    price: 500000,
+    category: 'sports',
+  },
+  {
+    id: 2,
+    name: 'A5',
+    price: 700000,
+    category: 'luxury',
+  },
+  {
+    id: 3,
+    name: 'huyara',
+    price: 1500000,
+    category: 'sports',
+  },
+  {
+    id: 4,
+    name: 'agera R',
+    price: 3500000,
+    category: 'sports',
+  },
+]
+const vegetables = [
+  {
+    id: 1,
+    name: 'Carrots',
+    pickDate: '2023-03-25',
+  },
+  {
+    id: 2,
+    name: 'Broccoli',
+    pickDate: '2023-03-30',
+  },
+  {
+    id: 3,
+    name: 'Peppers',
+    pickDate: '2023-03-25',
+  },
+  {
+    id: 4,
+    name: 'Tomatoes',
+    pickDate: '2023-03-27',
+  },
+  {
+    id: 5,
+    name: 'Ladies Finger',
+    pickDate: '2023-03-30',
+  },
+]
+
+export { employees , userData , products , product2 , title, content , heading, name, learning , product3 ,todoItems , cartoons , DonationData , cars , vegetables };
