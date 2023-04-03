@@ -262,27 +262,52 @@ const cars = [
   {
     id: 1,
     name: 'supra',
-    price: 500000,
+    price: 50,
     category: 'sports',
   },
   {
     id: 2,
     name: 'A5',
-    price: 700000,
+    price: 70,
     category: 'luxury',
   },
   {
     id: 3,
     name: 'huyara',
-    price: 1500000,
+    price: 150,
     category: 'sports',
   },
   {
     id: 4,
     name: 'agera R',
-    price: 3500000,
+    price: 350,
     category: 'sports',
   },
+  {
+    id: 5,
+    name: 'agera T',
+    price: 300,
+    category: 'sports',
+  },
+  {
+    id: 6,
+    name: 'agera S',
+    price: 3500,
+    category: 'sports',
+  },
+  {
+    id: 7,
+    name: 'agera Z',
+    price: 240,
+    category: 'sports',
+  },
+  {
+    id: 8,
+    name: 'agera R',
+    price: 35,
+    category: 'sports',
+  },
+
 ]
 const vegetables = [
   {
@@ -311,5 +336,19 @@ const vegetables = [
     pickDate: '2023-03-30',
   },
 ]
+const bouquet = [
+  {
+    id: 1,
+    flowers: ['rose', 'lily', 'marigold'],
+    totalFlowers: 9,
+    price: 1400,
+  },
+  {
+    id: 2,
+    flowers: ['snapdragon', 'sunflower'],
+    totalFlowers: 10,
+    price: 3400,
+  },
+]
 
-export { employees , userData , products , product2 , title, content , heading, name, learning , product3 ,todoItems , cartoons , DonationData , cars , vegetables };
+export { employees , userData , products , product2 , title, content , heading, name, learning , product3 ,todoItems , cartoons , DonationData , cars , vegetables , bouquet };
