@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 
 
 const jobs = [
@@ -8,16 +8,25 @@ const jobs = [
     {company:'facebook', title:'developer4', location:'Noida', salary: 50000, jobtype:'contract'}
 ]
 
-const DisplayJobs = ({jobData, userChecked, userCheckedValue}) =>{
+// jobData.filter(({jobtype})=> jobtype === userCheckedValue.filter(item=>) )
 
-    const dataFilterWitJobType = (jobData) =>{
-        if(userChecked){
-           return jobData.filter(({jobtype})=> jobtype === userCheckedValue )
-        } else return jobData
-    }
+const DisplayJobs = ({jobData, userChecked, userCheckedValue}) =>{
+    const [returnedData, setReturnedData] = useState([...jobData]);
+   
+        useEffect(()=> {
+            if(userCheckedValue.length > 0){
+                const filtered = jobData.filter((obj) => userCheckedValue.includes(obj.jobtype))
+                setReturnedData([...filtered])
+            } else setReturnedData([...jobData])
+
+        },[userCheckedValue])
+  
+        
+        console.log(returnedData)   
+
     return(
         <div>
-            {dataFilterWitJobType(jobData).map(({company,title,location,salary}) =>
+            {returnedData.map(({company,title,location,salary}) =>
             <div key={company} 
              style={{
               border:'solid 2px black',
@@ -36,14 +45,21 @@ const DisplayJobs = ({jobData, userChecked, userCheckedValue}) =>{
 
 
 const JobPosting = () => {
-    const [checkedBoxValue, setCheckedBoxValue] = useState('');
+    const [checkedBoxValue, setCheckedBoxValue] = useState([]);
     const [isChecked, setIsChecked] = useState(false)
 
     const checkboxHandler = (e) =>{
         if(e.target.checked){
             setIsChecked(true)
+            setCheckedBoxValue([...checkedBoxValue,e.target.value])
+        }else {
+            if(!e.target.checked){
+                console.log('unchecked');
+                const updatedValue = [...checkedBoxValue]
+                setCheckedBoxValue(updatedValue.filter(item => (item !== e.target.value)))
+            }
         }
-        setCheckedBoxValue(e.target.value)
+        // setCheckedBoxValue([...checkedBoxValue,e.target.value])
     }
     // console.log(checkedBox);
 
