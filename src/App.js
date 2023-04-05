@@ -4,8 +4,8 @@ import './App.css';
 // import Filterpractice from './components/100Days_of_code/Day6/Filterpractice';
 // import JobPosting from './components/100Days_of_code/Day6/JobPosting';
 // import EventList from './components/100Days_of_code/Day7/EventList';
-import Character from './components/100Days_of_code/Day8/Character';
-import { employees , cars , events , characters } from './components/Database';
+// import Character from './components/100Days_of_code/Day8/Character';
+import { employees , cars , events , characters , itemList , todoItemsData } from './components/Database';
 // import Carstore from './components/Carstore';
 // import Cart from './components/Cart';
 // import ClassStudents from './components/ClassStudents';
@@ -20,6 +20,8 @@ import { employees , cars , events , characters } from './components/Database';
 // import ZoomCounter from './components/100Days_of_code/Day2/ZoomCounter';
 // import DisableButton from './components/100Days_of_code/Day2/DisableButton';
 // import ProductCard from './components/100Days_of_code/Day3/ProductCard';
+// import Grocery from './components/100Days_of_code/Day9/Grocery';
+import Todo from './components/100Days_of_code/Day9/Todo';
 
 
 
@@ -47,7 +49,9 @@ function App() {
      {/* <Filterpractice dataItem={cars}/> */}
      {/* <JobPosting /> */}
      {/* <EventList listItem={events}/> */}
-     <Character characterData={characters}/>
+     {/* <Character characterData={characters}/> */}
+     {/* <Grocery itemList={itemList}/> */}
+     <Todo todoItems={todoItemsData}/>
     </div>
   )
 }

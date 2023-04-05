@@ -412,4 +412,18 @@ const characters = {
   ],
 };
 
-export { employees , userData , products , product2 , title, content , heading, name, learning , product3 ,todoItems , cartoons , DonationData , cars , vegetables , bouquet , events, characters };
+const itemList = [
+  { id: 1, name: "Apple", category: "Fruit" },
+  { id: 2, name: "Carrot", category: "Vegetable" },
+  { id: 3, name: "Banana", category: "Fruit" },
+  { id: 4, name: "Broccoli", category: "Vegetable" },
+];
+
+const todoItemsData = [
+  {id: 1, task: "Writing 1-page poem", isDone: true},
+  {id: 2, task: "Gym", isDone: false},
+  {id: 3, task: "Shopping", isDone: false},
+  {id: 4, task: "Standup call", isDone: true},
+]
+
+export { employees , userData , products , product2 , title, content , heading, name, learning , product3 ,todoItems , cartoons , DonationData , cars , vegetables , bouquet , events, characters , itemList , todoItemsData };
