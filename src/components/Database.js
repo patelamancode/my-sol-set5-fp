@@ -351,4 +351,65 @@ const bouquet = [
   },
 ]
 
-export { employees , userData , products , product2 , title, content , heading, name, learning , product3 ,todoItems , cartoons , DonationData , cars , vegetables , bouquet };
+//  name, date, location, and ticket price
+
+const events = [
+  {name: 'DJ snake concert', date:'12/04/2023', location: 'noida', ticketPrice: 1000, eventType: 'music'},
+  {name: 'Sun burn', date:'22/04/2023', location: 'delhi', ticketPrice: 2000, eventType: 'music'},
+  {name: 'Ind-Pak match', date:'24/04/2023', location: 'pune', ticketPrice: 1000, eventType: 'sports'},
+  {name: 'Drama', date:'12/05/2023', location: 'bombay', ticketPrice: 500, eventType: 'theater'}
+]
+
+const characters = {
+  heroes: [
+    {
+      name: "IRON MAN",
+      powers: "Genius,Rich,IRON Suit",
+      costume: "IRON MAN suit",
+    },
+    {
+      name: "ANT MAN",
+      powers: "Ant man suit",
+      costume: "Ant man suit",
+    },
+    {
+      name: "Spider-man",
+      powers: "Reflexes,Speed,Spider-Sense",
+      costume: "Spider Suit",
+    },
+    {
+      name: "Bat man",
+      powers: "Rich,Bat suit",
+      costume: "Bat Suit",
+    },
+    {
+      name: "Super-man",
+      powers: "Superhuman strength,Reflexes,Speed",
+      costume: "Superman  Suit",
+    },
+  ],
+  villains: [
+    {
+      name: "Thanos",
+      powers: "Superhuman strength,Reflexes,Speed,",
+      costume: "Metal armor",
+    },
+    {
+      name: "Venom",
+      powers: "shapeshifting and camouflage Symbiotes autonomous defense",
+      costume: "black suit",
+    },
+    {
+      name: "Kang the conqueror",
+      powers: "time travel, can access all tech",
+      costume: "kang armor",
+    },
+    {
+      name: "Joker",
+      powers: "clownlike appearance and sick humour",
+      costume: "Joker costume",
+    },
+  ],
+};
+
+export { employees , userData , products , product2 , title, content , heading, name, learning , product3 ,todoItems , cartoons , DonationData , cars , vegetables , bouquet , events, characters };
