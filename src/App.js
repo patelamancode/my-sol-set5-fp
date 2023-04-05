@@ -5,7 +5,7 @@ import './App.css';
 // import JobPosting from './components/100Days_of_code/Day6/JobPosting';
 // import EventList from './components/100Days_of_code/Day7/EventList';
 // import Character from './components/100Days_of_code/Day8/Character';
-import { employees , cars , events , characters , itemList , todoItemsData } from './components/Database';
+import { employees , cars , events , characters , itemList , todoItemsData , books} from './components/Database';
 // import Carstore from './components/Carstore';
 // import Cart from './components/Cart';
 // import ClassStudents from './components/ClassStudents';
@@ -22,6 +22,8 @@ import { employees , cars , events , characters , itemList , todoItemsData } fro
 // import ProductCard from './components/100Days_of_code/Day3/ProductCard';
 // import Grocery from './components/100Days_of_code/Day9/Grocery';
 import Todo from './components/100Days_of_code/Day9/Todo';
+import Question5 from './components/100Days_of_code/Day9/Question5';
+import Library from './components/100Days_of_code/Day9/Library';
 
 
 
@@ -52,6 +54,8 @@ function App() {
      {/* <Character characterData={characters}/> */}
      {/* <Grocery itemList={itemList}/> */}
      <Todo todoItems={todoItemsData}/>
+     <Question5 todoItems={todoItemsData}/>
+     <Library bookData={books}/>
     </div>
   )
 }
