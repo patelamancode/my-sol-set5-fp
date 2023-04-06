@@ -1,8 +1,6 @@
 import React from 'react'
 
 const CharacterDetails = ({characterData, userChoiceCharacter}) => {
-    console.log(characterData[userChoiceCharacter]);
-    
   return (
     <div>
       {userChoiceCharacter && characterData[userChoiceCharacter].map(({name,power,costume}) =>

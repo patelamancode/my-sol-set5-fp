@@ -1,13 +1,15 @@
 import React from 'react'
 
-const Button = ({type}) => {
+const Button = ({typeOfBooks}) => {
 
-    
+    const dataHandler = (selectedBtn) =>{
+        
+    }
 
   return (
     <div>
       <button>All Genres</button>
-      {type.reduce((acc,curr) => acc.find(element => element===curr.genre) ? acc : [...acc, curr.genre] , []).map(el => <button key={el}>{el}</button>)}
+      {typeOfBooks.reduce((acc,curr) => acc.find(element => element===curr.genre) ? acc : [...acc, curr.genre] , []).map(el => <button key={el} onClick={() => dataHandler(el)}>{el}</button>)}
     </div>
   )
 }

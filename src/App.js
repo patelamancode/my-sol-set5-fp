@@ -21,8 +21,8 @@ import { employees , cars , events , characters , itemList , todoItemsData , boo
 // import DisableButton from './components/100Days_of_code/Day2/DisableButton';
 // import ProductCard from './components/100Days_of_code/Day3/ProductCard';
 // import Grocery from './components/100Days_of_code/Day9/Grocery';
-import Todo from './components/100Days_of_code/Day9/Todo';
-import Question5 from './components/100Days_of_code/Day9/Question5';
+// import Todo from './components/100Days_of_code/Day9/Todo';
+// import Question5 from './components/100Days_of_code/Day9/Question5';
 import Library from './components/100Days_of_code/Day9/Library';
 
 
@@ -53,8 +53,8 @@ function App() {
      {/* <EventList listItem={events}/> */}
      {/* <Character characterData={characters}/> */}
      {/* <Grocery itemList={itemList}/> */}
-     <Todo todoItems={todoItemsData}/>
-     <Question5 todoItems={todoItemsData}/>
+     {/* <Todo todoItems={todoItemsData}/>
+     <Question5 todoItems={todoItemsData}/> */}
      <Library bookData={books}/>
     </div>
   )
