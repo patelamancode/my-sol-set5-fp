@@ -1,6 +1,7 @@
 import './App.css';
 // import TodoList from './components/100Days_of_code/Day11UES6/TodoList';
-import VedioPlayer from './components/100Days_of_code/Day11UES6/VedioPlayer';
+// import VedioPlayer from './components/100Days_of_code/Day11UES6/VedioPlayer';
+import Solution9 from './components/100Days_of_code/Day12/Solution9';
 // import Comments from './components/100Days_of_code/Day10US5.js/Comments';
 // import Question1 from './components/100Days_of_code/Day11UES6/Question1';
 // import OnlineUsers from './components/100Days_of_code/Day10US5.js/OnlineUsers';
@@ -69,7 +70,8 @@ function App() {
      {/* <Comments /> */}
      {/* <Question1 /> */}
      {/* <TodoList /> */}
-     <VedioPlayer />
+     {/* <VedioPlayer /> */}
+     <Solution9 />
     </div>
   )
 }
